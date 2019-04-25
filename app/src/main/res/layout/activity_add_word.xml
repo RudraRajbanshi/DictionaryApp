@@ -5,36 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".AddWordActivity">
 
-    <TextView
+    <EditText
+        android:id="@+id/etWord"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="First Activity"
-        android:textAlignment="center"
-        android:textStyle="bold"
-        android:textSize="50dp"/>
+        android:hint="Enter word"
+        android:textSize="20sp"
+        android:layout_margin="20dp"/>
+    <EditText
+        android:id="@+id/etMeaning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter meaning"
+        android:gravity="start"
+        android:textSize="20sp"
+        android:layout_weight="1"
+        android:layout_margin="20dp"/>
+
     <Button
-        android:id="@+id/btnOpen"
+        android:id="@+id/btnAddWord"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Open another activity"
-        android:textSize="30dp"/>
-    <Button
-        android:id="@+id/btnOpenList"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Refresh List"
-        android:textSize="30dp"/>
-
-    <ListView
-        android:id="@+id/lstDictionary"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        
-
-        >
-
-    </ListView>
+        android:text="Add Word"
+        />
 
 </LinearLayout>
